@@ -206,8 +206,9 @@ function createParticleSystem() {
     }
 
     particles.addAttribute('position', new THREE.BufferAttribute(positions, 3));
-    particles.addAttribute('color', new THREE.BufferAttribute(colors, 3));
-    particles.addAttribute('velocity', new THREE.BufferAttribute(velocities, 3));
+    particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    particles.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    particles.setAttribute('velocity', new THREE.BufferAttribute(velocities, 3));
 
     var particleMaterial = new THREE.PointsMaterial({
         size: 0.5,
