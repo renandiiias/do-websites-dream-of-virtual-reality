@@ -1,57 +1,222 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='pt-BR'>
 	<head>
 		<meta charset='utf-8' />
-		<title>Do Websites Dream of Virtual Reality?</title>
+		<title>NEXUS AGENCY - Experiências Digitais Imersivas</title>
 		<meta name='viewport' content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
 
 		<!-- Facebook Metas -->
-		<meta property="og:url" content="http://awwwards.unboring.net/" />
-		<meta property="og:title" content="Do Websites Dream of Virtual Reality?"/>
-		<meta property="og:description" content="An awwwards.com & unboring.net webVR experiment"/>
-		<meta property="og:image" content="http://awwwards.unboring.net/assets/share.jpg">
-
+		<meta property="og:url" content="https://nexusagency.digital/" />
+		<meta property="og:title" content="NEXUS AGENCY - Experiências Digitais Imersivas"/>
+		<meta property="og:description" content="Criamos experiências digitais que transcendem o comum. WebGL, VR, AR e desenvolvimento web de última geração."/>
+		<meta property="og:image" content="assets/share.jpg">
 
 		<!-- Schema.org markup for Google+ -->
-		<meta itemprop="name" content="Do Websites Dream of Virtual Reality?">
-		<meta itemprop="description" content="An awwwards.com & unboring.net webVR experiment">
-		<meta itemprop="image" content="http://awwwards.unboring.net/assets/share.jpg">
+		<meta itemprop="name" content="NEXUS AGENCY - Experiências Digitais Imersivas">
+		<meta itemprop="description" content="Criamos experiências digitais que transcendem o comum. WebGL, VR, AR e desenvolvimento web de última geração.">
+		<meta itemprop="image" content="assets/share.jpg">
 
 		<!-- Twitter Card data -->
 		<meta property="twitter:card" content="summary" />
-		<meta property="twitter:site" content="@un_boring" />
-		<meta property="twitter:title" content="Do Websites Dream of Virtual Reality?" />
-		<meta property="twitter:description" content="An awwwards.com & unboring.net webVR experiment" />
-		<meta property="twitter:image" content="http://awwwards.unboring.net/assets/share.jpg" />
-		<meta property="twitter:url" content="http://awwwards.unboring.net" />
+		<meta property="twitter:site" content="@nexusagency" />
+		<meta property="twitter:title" content="NEXUS AGENCY - Experiências Digitais Imersivas" />
+		<meta property="twitter:description" content="Criamos experiências digitais que transcendem o comum. WebGL, VR, AR e desenvolvimento web de última geração." />
+		<meta property="twitter:image" content="assets/share.jpg" />
 
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:700,100">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="shortcut icon" href="favicon.ico"/>
 	</head>
 	<body>
-	<div id='container'></div>
-	<footer>
-		<a href="http://www.awwwards.com/do-websites-dream-of-virtual-reality.html" target:="_blank" >Do Websites Dream of Virtual Reality?</a><br/>
-		An <a href="http://awwwards.com" target="_blank">Awwwards</a> & <a href="https://twitter.com/arturitu" target="_blank">@arturitu</a> webVR experiment · <a href="https://github.com/arturitu/do-websites-dream-of-virtual-reality" target="_blank">Github project</a>
-	</footer>
-	<script src='js/libs/three.min.js'></script>
-	<script src='js/effects/VREffect.js'></script>
-	<script src="js/controls/VRControls.js"></script>
-	<script src="js/libs/webvr-manager.js"></script>
-	<script src="js/libs/webvr-polyfill.js"></script>
-	<script src="js/libs/THREE.MeshLine.js"></script>
-	<script src="js/main.js"></script>
+		<div id='container'></div>
+		
+		<!-- Navigation -->
+		<nav id="main-nav" class="nav-overlay">
+			<div class="nav-brand">
+				<h1>NEXUS</h1>
+				<span>AGENCY</span>
+			</div>
+			<ul class="nav-links">
+				<li><a href="#home" class="nav-link active" data-section="home">Início</a></li>
+				<li><a href="#services" class="nav-link" data-section="services">Serviços</a></li>
+				<li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfólio</a></li>
+				<li><a href="#team" class="nav-link" data-section="team">Equipe</a></li>
+				<li><a href="#contact" class="nav-link" data-section="contact">Contato</a></li>
+			</ul>
+			<div class="vr-toggle">
+				<button id="vr-button" class="vr-btn">VR Mode</button>
+			</div>
+		</nav>
 
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<!-- Content Panels -->
+		<div id="content-panels">
+			<!-- Home Panel -->
+			<div class="content-panel active" id="home-panel">
+				<div class="panel-content">
+					<h1 class="main-title">
+						<span class="title-line">CRIAMOS</span>
+						<span class="title-line">EXPERIÊNCIAS</span>
+						<span class="title-line highlight">IMPOSSÍVEIS</span>
+					</h1>
+					<p class="main-subtitle">
+						Somos uma agência que transcende os limites do digital, criando experiências imersivas 
+						que conectam marcas e pessoas através da tecnologia de vanguarda.
+					</p>
+					<div class="cta-buttons">
+						<button class="btn btn-primary" data-action="explore">Explorar Projetos</button>
+						<button class="btn btn-secondary" data-action="contact">Iniciar Projeto</button>
+					</div>
+				</div>
+			</div>
 
-		ga('create', 'UA-71777-19', 'auto');
-		ga('send', 'pageview');
+			<!-- Services Panel -->
+			<div class="content-panel" id="services-panel">
+				<div class="panel-content">
+					<h2 class="panel-title">Nossos Serviços</h2>
+					<div class="services-grid">
+						<div class="service-card" data-service="webgl">
+							<div class="service-icon">🌌</div>
+							<h3>Experiências WebGL</h3>
+							<p>Criamos mundos 3D interativos que funcionam diretamente no navegador</p>
+						</div>
+						<div class="service-card" data-service="vr">
+							<div class="service-icon">🥽</div>
+							<h3>Realidade Virtual</h3>
+							<p>Experiências VR imersivas para web e dispositivos móveis</p>
+						</div>
+						<div class="service-card" data-service="ar">
+							<div class="service-icon">📱</div>
+							<h3>Realidade Aumentada</h3>
+							<p>Soluções AR que transformam a interação com produtos e serviços</p>
+						</div>
+						<div class="service-card" data-service="web">
+							<div class="service-icon">💻</div>
+							<h3>Desenvolvimento Web</h3>
+							<p>Sites e aplicações web de alta performance com design inovador</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-	</script>
+			<!-- Portfolio Panel -->
+			<div class="content-panel" id="portfolio-panel">
+				<div class="panel-content">
+					<h2 class="panel-title">Portfólio</h2>
+					<div class="portfolio-grid">
+						<div class="portfolio-item" data-project="cosmic">
+							<h4>Cosmic Explorer</h4>
+							<p>Experiência WebGL para exploração espacial</p>
+							<span class="tech-stack">Three.js • WebGL • Audio 3D</span>
+						</div>
+						<div class="portfolio-item" data-project="neural">
+							<h4>Neural Networks VR</h4>
+							<p>Visualização imersiva de redes neurais</p>
+							<span class="tech-stack">WebVR • Machine Learning • Data Viz</span>
+						</div>
+						<div class="portfolio-item" data-project="dreams">
+							<h4>Digital Dreams</h4>
+							<p>Arte interativa responsiva ao som</p>
+							<span class="tech-stack">Web Audio • Shaders • Generative Art</span>
+						</div>
+						<div class="portfolio-item" data-project="quantum">
+							<h4>Quantum Reality</h4>
+							<p>Simulação quântica interativa</p>
+							<span class="tech-stack">WebGL2 • Physics • Real-time</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Team Panel -->
+			<div class="content-panel" id="team-panel">
+				<div class="panel-content">
+					<h2 class="panel-title">Nossa Equipe</h2>
+					<div class="team-grid">
+						<div class="team-member">
+							<div class="member-avatar">AR</div>
+							<h4>Alex Rivera</h4>
+							<p>Creative Director</p>
+							<span>Especialista em experiências imersivas</span>
+						</div>
+						<div class="team-member">
+							<div class="member-avatar">MS</div>
+							<h4>Maya Singh</h4>
+							<p>Lead Developer</p>
+							<span>WebGL e realidade virtual</span>
+						</div>
+						<div class="team-member">
+							<div class="member-avatar">TC</div>
+							<h4>Thomas Chen</h4>
+							<p>3D Artist</p>
+							<span>Modelagem e animação 3D</span>
+						</div>
+						<div class="team-member">
+							<div class="member-avatar">LP</div>
+							<h4>Luna Park</h4>
+							<p>UX Designer</p>
+							<span>Design de interação e interface</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contact Panel -->
+			<div class="content-panel" id="contact-panel">
+				<div class="panel-content">
+					<h2 class="panel-title">Vamos Criar Juntos</h2>
+					<div class="contact-content">
+						<div class="contact-info">
+							<div class="contact-item">
+								<span class="contact-label">Email:</span>
+								<span class="contact-value">hello@nexusagency.digital</span>
+							</div>
+							<div class="contact-item">
+								<span class="contact-label">Telefone:</span>
+								<span class="contact-value">+55 11 99999-9999</span>
+							</div>
+							<div class="contact-item">
+								<span class="contact-label">Localização:</span>
+								<span class="contact-value">São Paulo, Brasil</span>
+							</div>
+						</div>
+						<form class="contact-form">
+							<input type="text" placeholder="Seu nome" required>
+							<input type="email" placeholder="Seu email" required>
+							<textarea placeholder="Conte-nos sobre seu projeto..." rows="4" required></textarea>
+							<button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- VR Info Overlay -->
+		<div id="vr-info" class="vr-overlay hidden">
+			<div class="vr-content">
+				<h3>Modo VR Ativado</h3>
+				<p>Use um headset VR compatível ou Google Cardboard para uma experiência imersiva completa.</p>
+				<button id="exit-vr" class="btn btn-secondary">Sair do VR</button>
+			</div>
+		</div>
+
+		<!-- Loading Screen -->
+		<div id="loading-screen" class="loading-overlay">
+			<div class="loading-content">
+				<div class="loading-spinner"></div>
+				<h3>Carregando Experiência</h3>
+				<p>Preparando o universo digital...</p>
+			</div>
+		</div>
+
+		<script src='js/libs/three.min.js'></script>
+		<script src='js/effects/VREffect.js'></script>
+		<script src="js/controls/VRControls.js"></script>
+		<script src="js/libs/webvr-manager.js"></script>
+		<script src="js/libs/webvr-polyfill.js"></script>
+		<script src="js/libs/THREE.MeshLine.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/ui.js"></script>
 	</body>
 </html>
