@@ -1,0 +1,23 @@
+{
+  "name": "nexus-agency-immersive-site",
+  "version": "1.0.0",
+  "description": "Immersive WebGL agency website with VR capabilities",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -o -p 3000",
+    "start": "http-server . -p 3000"
+  },
+  "keywords": [
+    "webgl",
+    "vr",
+    "three.js",
+    "webvr",
+    "agency",
+    "immersive"
+  ],
+  "author": "NEXUS Agency",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
